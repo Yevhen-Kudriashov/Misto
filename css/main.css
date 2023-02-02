@@ -1,0 +1,1703 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap");
+/* line 1, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 12, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 16, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 20, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 24, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 29, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_reset.scss */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 36, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_reset.scss */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 42, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 46, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_reset.scss */
+a {
+  text-decoration: none; }
+
+/*
+// scrollbar vars
+$btnColor: #331e1e;
+$trackColor: #c49191;
+$scrollWidth: 10px;
+*/
+/* line 6, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_templates.scss */
+.top-bar__container, .up-body-from-blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+/* line 11, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_templates.scss */
+.column-top-bar, .column-top-bar__item, .menu__list, .title-text-all-categories__text, .women-all-categories__text, .men-all-categories__text, .accessories-all-categories__text, .navigation-body-block__menu_women, .navigation-body-block__menu_men, .content-body-block__item_active::after, .button-body-block, .column-offer__text, .registration__container, .body-registration__content, .body-feedback__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 34, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_templates.scss */
+.header__body, .column-body-footer__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+/* line 41, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_templates.scss */
+.navigation-body-block, .body-feedback__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+/* line 48, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_templates.scss */
+.all-categories__body, .info-all-categories__column, .content-body-block__column, .column-offer, .body-from-blog__content, .body-contacts__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+/* line 1, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_general.scss */
+html {
+  height: 100%; }
+
+/* line 4, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_general.scss */
+body {
+  height: 100%;
+  font-weight: 400;
+  font-family: "League Spartan";
+  font-size: 12px;
+  /*
+    @include scrollbars($scrollWidth, $btnColor, $trackColor);
+    */ }
+
+/* line 14, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_general.scss */
+body._lock {
+  overflow: hidden; }
+
+/* line 18, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_general.scss */
+.container {
+  max-width: 1120px; }
+
+/* line 23, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_general.scss */
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+/* line 30, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_general.scss */
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+
+/* line 2, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_classes.scss */
+.mainCaption {
+  font-size: 22px;
+  line-height: 113%;
+  font-weight: 600;
+  color: #121212; }
+
+/* line 7, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_classes.scss */
+.caption {
+  font-size: 14px;
+  line-height: 114%;
+  font-weight: 400;
+  color: #121212; }
+
+/* line 11, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_classes.scss */
+.subCaption {
+  font-size: 12px;
+  line-height: 108%;
+  font-weight: 600;
+  color: #121212; }
+
+/* line 17, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_classes.scss */
+.desc {
+  font-size: 16px;
+  line-height: 112%;
+  font-weight: 400;
+  color: #121212; }
+
+/* line 24, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_classes.scss */
+.button {
+  padding: 23px 119px 23px 117px;
+  background-color: #121212;
+  color: #FFFFFF;
+  border-radius: 0px;
+  border: 2px solid #121212;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; }
+  /* line 29, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_classes.scss */
+  .button:hover {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    padding: 23px 119px 23px 117px;
+    background-color: #7d7d7d;
+    color: #121212;
+    border-radius: 0px;
+    border: 2px solid #121212;
+    outline: none; }
+  /* line 33, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_classes.scss */
+  .button:focus {
+    outline: none; }
+
+/* line 39, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_classes.scss */
+.button-empty {
+  padding: 22px 67px 22px 35px;
+  background-color: transparent;
+  color: #FFFFFF;
+  border-radius: 12px;
+  border: 2px solid #7d7d7d;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; }
+  /* line 44, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_classes.scss */
+  .button-empty:hover {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    padding: 22px 67px 22px 35px;
+    background-color: #FFFFFF;
+    color: white;
+    border-radius: 12px;
+    border: 2px solid #FFFFFF;
+    outline: none; }
+  /* line 48, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_classes.scss */
+  .button-empty:focus {
+    outline: none; }
+
+/* line 53, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_classes.scss */
+.container {
+  max-width: 1150px;
+  padding: 0 15px;
+  width: 100%;
+  min-height: 100%;
+  margin: 0 auto; }
+
+/* line 1, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_top-bar.scss */
+.top-bar {
+  background-color: #121212;
+  height: 24px; }
+  /* line 4, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_top-bar.scss */
+  .top-bar__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+/* line 10, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_top-bar.scss */
+.column-top-bar {
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px; }
+  /* line 14, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_top-bar.scss */
+  .column-top-bar__item {
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px; }
+  /* line 19, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_top-bar.scss */
+  .column-top-bar__text {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 109%;
+    color: #FFFFFF;
+    opacity: 0.8; }
+
+/* line 29, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_top-bar.scss */
+.social-top-bar__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px; }
+
+/* line 2, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_header.scss */
+.header__body {
+  height: 66px; }
+
+/* line 6, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_header.scss */
+.header__logo {
+  z-index: 11; }
+
+/* line 12, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_header.scss */
+.menu__list {
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px; }
+
+/* line 16, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_header.scss */
+.menu__link:hover {
+  font-weight: 600; }
+
+/* line 19, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_header.scss */
+.menu__icon {
+  display: none; }
+
+/* line 24, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_header.scss */
+.navigation-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 24px;
+     -moz-column-gap: 24px;
+          column-gap: 24px; }
+
+/* line 2, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.all-categories__container {
+  max-width: 1150px;
+  padding: 32px 15px 0px 15px;
+  margin-bottom: 96px; }
+
+/* line 8, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.all-categories__body {
+  gap: 30px;
+  min-width: 0; }
+
+/* line 14, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.all-categories__women-men {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px; }
+
+/* line 19, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.all-categories__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  width: 540px; }
+
+/* line 24, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.all-categories__right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40%;
+          flex: 0 1 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px; }
+
+/* line 31, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.swiper-button-prev {
+  display: block;
+  z-index: 5;
+  color: #121212;
+  padding: 10px 0px 0px 40px; }
+
+/* line 37, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.swiper-button-next {
+  display: block;
+  z-index: 5;
+  color: #121212;
+  padding: 10px 60px 0px 0px; }
+
+/* line 44, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px; }
+
+/* line 50, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.title-text-all-categories {
+  position: relative; }
+  /* line 52, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+  .title-text-all-categories__img {
+    position: relative; }
+    /* line 54, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+    .title-text-all-categories__img img {
+      width: 100%; }
+  /* line 59, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+  .title-text-all-categories__text {
+    content: '';
+    position: absolute;
+    width: 289px;
+    height: 100px;
+    left: 125px;
+    top: 195px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-transform: uppercase;
+    row-gap: 14px;
+    z-index: 3; }
+  /* line 74, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+  .title-text-all-categories__title {
+    opacity: 0.4;
+    letter-spacing: 0.06em; }
+
+/* line 81, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.women-all-categories {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 255px;
+          flex: 0 1 255px; }
+  /* line 84, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+  .women-all-categories__text {
+    content: '';
+    position: absolute;
+    width: 118px;
+    height: 48px;
+    left: 70px;
+    top: 76px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 157%;
+    color: #121212; }
+
+/* line 102, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.men-all-categories {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 255px;
+          flex: 0 1 255px; }
+  /* line 105, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+  .men-all-categories__text {
+    content: '';
+    position: absolute;
+    width: 86px;
+    height: 48px;
+    left: 85px;
+    top: 76px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 157%;
+    color: #121212; }
+
+/* line 123, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.accessories-all-categories {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 540px;
+          flex: 0 1 540px; }
+  /* line 126, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+  .accessories-all-categories__text {
+    content: '';
+    position: absolute;
+    width: 166px;
+    height: 48px;
+    left: 187px;
+    top: 106px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 157%;
+    color: #121212; }
+
+/* line 145, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.info-all-categories__column {
+  height: 103px;
+  gap: 30px;
+  padding: 42px 0px 0px 0px; }
+
+/* line 151, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.info-all-categories__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px; }
+
+/* line 156, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_all-categories.scss */
+.info-all-categories__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 302px;
+  row-gap: 5px; }
+
+/* line 2, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.womens__container {
+  margin-bottom: 96px; }
+
+/* line 7, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.body-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 48px; }
+
+/* line 16, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.navigation-body-block__menu_women {
+  gap: 32px; }
+
+/* line 20, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.navigation-body-block__menu_men {
+  gap: 32px; }
+
+/* line 25, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.navigation-body-block__burger {
+  display: none; }
+
+/* line 29, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.navigation-body-block__link {
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  opacity: 0.6; }
+  /* line 33, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+  .navigation-body-block__link:hover {
+    font-weight: 500;
+    opacity: 1; }
+
+/* line 42, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.content-body-block__column {
+  gap: 30px; }
+
+/* line 49, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.content-body-block__item_active {
+  position: relative; }
+  /* line 51, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+  .content-body-block__item_active::after {
+    content: '-50%';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 53px;
+    height: 31px;
+    background-color: #E91E63;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 13px; }
+
+/* line 68, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.content-body-block__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 16px 0px 1px 0px; }
+
+/* line 74, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.content-body-block__title {
+  padding-bottom: 12px; }
+
+/* line 77, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.content-body-block__two-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 5px;
+     -moz-column-gap: 5px;
+          column-gap: 5px; }
+
+/* line 82, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.content-body-block__price {
+  font-weight: 700; }
+
+/* line 86, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.content-body-block__stars {
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
+/* line 90, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.content-body-block__new-price {
+  font-weight: 700;
+  opacity: 0.4; }
+
+/* line 96, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+.button-body-block {
+  background-color: #F8F8F8;
+  width: 100%;
+  height: 48px; }
+  /* line 101, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_womens.scss */
+  .button-body-block__button {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    opacity: 0.8;
+    letter-spacing: 0.06em;
+    color: #121212;
+    text-transform: uppercase; }
+
+/* line 2, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_mens.scss */
+.mens__container {
+  margin-bottom: 96px; }
+
+/* line 2, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_offer.scss */
+.offer__container {
+  margin-bottom: 96px; }
+
+/* line 7, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_offer.scss */
+.column-offer {
+  gap: 30px; }
+  /* line 11, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_offer.scss */
+  .column-offer__left {
+    position: relative; }
+  /* line 16, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_offer.scss */
+  .column-offer__image img {
+    width: 100%; }
+  /* line 21, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_offer.scss */
+  .column-offer__text {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 36%;
+    left: 24%;
+    background-color: #FFFFFF;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 10px; }
+  /* line 34, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_offer.scss */
+  .column-offer__title {
+    letter-spacing: 0.06em;
+    opacity: 0.6;
+    text-transform: uppercase; }
+  /* line 40, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_offer.scss */
+  .column-offer__subtitle {
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center; }
+  /* line 47, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_offer.scss */
+  .column-offer__right {
+    position: relative; }
+
+/* line 51, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_offer.scss */
+span {
+  color: #E91E63; }
+
+/* line 1, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_registration.scss */
+.registration {
+  background: -webkit-gradient(linear, left top, left bottom, from(#F3F2F2), to(#DCDBDB));
+  background: linear-gradient(180deg, #F3F2F2 0%, #DCDBDB 100%); }
+  /* line 3, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_registration.scss */
+  .registration__container {
+    position: relative;
+    height: 580px;
+    margin-bottom: 96px; }
+
+/* line 12, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_registration.scss */
+.body-registration__img-women {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 6%;
+  left: 4%; }
+
+/* line 21, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_registration.scss */
+.body-registration__img-men {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 7%;
+  left: 72%; }
+
+/* line 30, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_registration.scss */
+.body-registration__forms {
+  background-color: #FFFFFF; }
+
+/* line 33, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_registration.scss */
+.body-registration__content {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 80px 96px 96px 96px; }
+
+/* line 40, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_registration.scss */
+.body-registration__title {
+  opacity: 0.4;
+  letter-spacing: 0.06em;
+  padding-bottom: 16px; }
+
+/* line 46, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_registration.scss */
+.body-registration__subtitle {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 138%;
+  padding-bottom: 54px;
+  letter-spacing: 0.06em;
+  color: #121212;
+  width: 220px;
+  text-align: center; }
+
+/* line 57, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_registration.scss */
+.body-registration__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 24px;
+  width: 340px; }
+
+/* line 66, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_registration.scss */
+.body-registration__email {
+  padding: 23px 65px;
+  text-align: center;
+  background-color: #F8F8F8;
+  border: 0px; }
+
+/* line 73, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_registration.scss */
+.body-registration__button {
+  padding: 23px 118px;
+  background-color: #121212;
+  border: 2px solid #121212;
+  margin: 0px auto;
+  color: #FFFFFF;
+  font-weight: 500;
+  opacity: 0.9;
+  letter-spacing: 0.06em;
+  cursor: pointer; }
+
+/* line 2, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_from-blog.scss */
+.from-blog__container {
+  margin-bottom: 162px; }
+
+/* line 8, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_from-blog.scss */
+.body-from-blog__content {
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 90px; }
+
+/* line 14, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_from-blog.scss */
+.body-from-blog__item {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 350px;
+          flex: 0 1 350px; }
+
+/* line 19, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_from-blog.scss */
+.body-from-blog__img {
+  width: 100%; }
+  /* line 21, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_from-blog.scss */
+  .body-from-blog__img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
+/* line 27, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_from-blog.scss */
+.body-from-blog__text {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  left: 10%;
+  top: 82%;
+  background-color: #FFFFFF; }
+
+/* line 37, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_from-blog.scss */
+.body-from-blog__list {
+  padding: 24px 16px 15px 16px;
+  width: 100%;
+  height: 100%; }
+
+/* line 43, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_from-blog.scss */
+.body-from-blog__title {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 157%;
+  letter-spacing: 0.06em;
+  color: #121212;
+  padding-bottom: 12px; }
+
+/* line 52, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_from-blog.scss */
+.body-from-blog__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  opacity: 0.8; }
+
+/* line 60, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_from-blog.scss */
+.up-body-from-blog {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 50px; }
+  /* line 65, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_from-blog.scss */
+  .up-body-from-blog__buttons {
+    opacity: 0.6;
+    letter-spacing: 0.06em;
+    border: 0px;
+    background-color: #FFFFFF;
+    cursor: pointer; }
+
+/* line 1, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_feedback.scss */
+.feedback {
+  background-color: #121212; }
+
+/* line 6, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_feedback.scss */
+.body-feedback__content {
+  padding: 12px 0px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px; }
+
+/* line 11, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_feedback.scss */
+.body-feedback__title {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF; }
+
+/* line 19, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_feedback.scss */
+.body-feedback__row {
+  gap: 12px; }
+
+/* line 24, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_feedback.scss */
+.body-feedback__email {
+  background-color: #494949;
+  width: 400px;
+  height: 32px;
+  border: 0px; }
+
+/* line 31, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_feedback.scss */
+.body-feedback__email::-webkit-input-placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.4;
+  padding: 7px 270px 7px 16px; }
+.body-feedback__email::-moz-placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.4;
+  padding: 7px 270px 7px 16px; }
+.body-feedback__email:-ms-input-placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.4;
+  padding: 7px 270px 7px 16px; }
+.body-feedback__email::-ms-input-placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.4;
+  padding: 7px 270px 7px 16px; }
+.body-feedback__email::placeholder {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  opacity: 0.4;
+  padding: 7px 270px 7px 16px; }
+
+/* line 40, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_feedback.scss */
+.body-feedback__button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  opacity: 0.9;
+  color: #FFFFFF;
+  background-color: #121212;
+  border: 1px solid #FFFFFF;
+  width: 108px;
+  height: 32px;
+  cursor: pointer; }
+  /* line 52, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_feedback.scss */
+  .body-feedback__button:hover {
+    background-color: #FFFFFF;
+    color: #121212; }
+
+/* line 60, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_feedback.scss */
+.social-body-feedback__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px; }
+
+/* line 2, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_contacts.scss */
+.contacts__container {
+  padding: 40px 15px; }
+
+/* line 8, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_contacts.scss */
+.body-contacts__column {
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
+  row-gap: 30px; }
+
+/* line 15, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_contacts.scss */
+.item-body-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+  min-width: 255px; }
+  /* line 20, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_contacts.scss */
+  .item-body-contacts__title {
+    letter-spacing: 0.06em;
+    text-transform: uppercase; }
+  /* line 25, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_contacts.scss */
+  .item-body-contacts__link {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 283%;
+    color: #121212;
+    opacity: 0.8; }
+    /* line 31, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_contacts.scss */
+    .item-body-contacts__link:hover {
+      text-decoration: underline; }
+    /* line 35, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_contacts.scss */
+    .item-body-contacts__link_location {
+      background-image: url(/img/contacts/location.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+      padding: 10px 0px 6px 25px; }
+    /* line 42, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_contacts.scss */
+    .item-body-contacts__link_number {
+      background-image: url(/img/contacts/phone.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+      padding: 10px 0px 6px 25px; }
+    /* line 49, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_contacts.scss */
+    .item-body-contacts__link_week {
+      background-image: url(/img/contacts/clock.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+      padding: 10px 0px 6px 25px; }
+    /* line 56, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_contacts.scss */
+    .item-body-contacts__link_email {
+      background-image: url(/img/contacts/letter.svg);
+      background-repeat: no-repeat;
+      background-position: left;
+      padding: 10px 0px 6px 25px; }
+
+/* line 1, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_footer.scss */
+.footer {
+  background-color: #F8F8F8; }
+
+/* line 5, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_footer.scss */
+.column-body-footer__item {
+  padding: 12px 4px; }
+
+/* line 10, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_footer.scss */
+.column-body-footer__brands {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px; }
+
+/* line 15, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_footer.scss */
+.column-body-footer__text {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 22px;
+  opacity: 0.8;
+  color: #121212; }
+
+/* line 23, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_footer.scss */
+.column-body-footer__link {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 22px;
+  opacity: 0.8;
+  color: #121212;
+  text-decoration: underline; }
+  /* line 30, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/blocks/_footer.scss */
+  .column-body-footer__link_span {
+    font-weight: 700;
+    color: #121212; }
+
+@media only screen and (max-width: 1150px) {
+  /* line 3, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .all-categories__body {
+    gap: 10px; }
+  /* line 9, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-registration__img-women {
+    left: -2%; }
+  /* line 12, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-registration__img-men {
+    left: 76%; }
+  /* line 17, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .all-categories__left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; } }
+
+@media only screen and (max-width: 991.98px) {
+  /* line 26, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .all-categories__container {
+    padding: 0px 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 15px; }
+  /* line 35, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .info-all-categories__column {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 30px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+  /* line 44, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .menu__list {
+    -webkit-column-gap: 28px;
+       -moz-column-gap: 28px;
+            column-gap: 28px; }
+  /* line 50, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-registration__img-women {
+    display: none; }
+  /* line 54, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-registration__img-men {
+    display: none; }
+  /* line 60, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-feedback__email {
+    width: 300px; }
+  /* line 66, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .from-blog__container {
+    margin-bottom: 120px; } }
+
+@media only screen and (max-width: 767.98px) {
+  /* line 73, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .column-top-bar {
+    gap: 10px; }
+    /* line 76, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .column-top-bar__item {
+      gap: 5px; }
+  /* line 82, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .all-categories__body {
+    gap: 20px; }
+  /* line 88, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-registration__content {
+    padding: 50px 55px 60px 55px; }
+  /* line 94, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .mens__container {
+    margin-bottom: 60px; }
+  /* line 100, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .womens__container {
+    margin-bottom: 60px; }
+  /* line 106, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-feedback__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  /* line 110, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-feedback__email {
+    width: 300px; }
+  /* line 114, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-feedback__title {
+    font-size: 18px;
+    padding: 15px 0px; }
+  /* line 119, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-feedback .social-body-feedback {
+    padding: 20px 0px; }
+    /* line 121, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .body-feedback .social-body-feedback__column {
+      gap: 40px; }
+  /* line 127, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .social-top-bar {
+    display: none; }
+  /* line 132, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .column-body-footer__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 15px;
+    padding: 20px 4px; } }
+
+@media only screen and (max-width: 479.98px) {
+  /* line 141, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .column-top-bar {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 9px; }
+    /* line 145, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .column-top-bar__item {
+      gap: 4px; }
+    /* line 149, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .column-top-bar__text {
+      font-weight: 500;
+      font-size: 10px; }
+  /* line 155, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .top-bar {
+    height: 35px; }
+  /* line 159, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .navigation-header {
+    gap: 12px; }
+  /* line 163, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  __text {
+    font-weight: 400;
+    font-size: 10px; }
+  /* line 169, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .info-all-categories__column {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  /* line 175, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .column-offer__text {
+    gap: 5px; }
+  /* line 179, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .column-offer__title {
+    font-weight: 500;
+    font-size: 11px; }
+  /* line 184, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .column-offer__subtitle {
+    font-size: 13px; }
+  /* line 190, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-registration__content {
+    padding: 20px 10px 30px 10px; }
+  /* line 194, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-registration__email {
+    padding: 17px 32px;
+    font-size: 14px; }
+  /* line 199, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-registration__button {
+    padding: 17px 80px;
+    font-size: 14px; }
+  /* line 204, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-registration__row {
+    width: 280px; }
+  /* line 208, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-registration__subtitle {
+    font-weight: 500;
+    font-size: 18px;
+    padding-bottom: 25px; }
+  /* line 216, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .registration__container {
+    height: 340px;
+    margin-bottom: 40px; }
+  /* line 223, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .offer__container {
+    margin-bottom: 40px; }
+  /* line 229, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .mens__container {
+    margin-bottom: 30px; }
+  /* line 235, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .womens__container {
+    margin-bottom: 30px; }
+  /* line 241, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-from-blog__content {
+    row-gap: 65px; }
+  /* line 245, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-from-blog__title {
+    font-weight: 500;
+    font-size: 12px;
+    padding-bottom: 5px; }
+  /* line 251, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-from-blog__subtitle {
+    font-size: 12px; }
+  /* line 255, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-from-blog__list {
+    padding: 10px 12px 12px 12px; }
+  /* line 260, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .body-feedback {
+    height: 210px; }
+    /* line 262, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .body-feedback__row {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+    /* line 266, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .body-feedback__email {
+      width: 250px;
+      height: 42px; }
+    /* line 271, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .body-feedback__email::-webkit-input-placeholder {
+      padding: 7px 0px;
+      text-align: center; }
+    .body-feedback__email::-moz-placeholder {
+      padding: 7px 0px;
+      text-align: center; }
+    .body-feedback__email:-ms-input-placeholder {
+      padding: 7px 0px;
+      text-align: center; }
+    .body-feedback__email::-ms-input-placeholder {
+      padding: 7px 0px;
+      text-align: center; }
+    .body-feedback__email::placeholder {
+      padding: 7px 0px;
+      text-align: center; }
+    /* line 276, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .body-feedback__button {
+      width: 250px;
+      height: 42px; }
+  /* line 283, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .from-blog__container {
+    margin-bottom: 90px; }
+  /* line 288, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .item-body-contacts {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 290, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .item-body-contacts__list {
+      display: none; }
+  /* line 296, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .column-body-footer__brands {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
+    row-gap: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
+
+@media only screen and (max-width: 479.98px) {
+  /* line 311, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .contacts__container {
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 50px;
+    margin-top: 20px; }
+  /* line 319, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .item-body-contacts__title {
+    min-width: 255px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 17px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
+    cursor: pointer; }
+    /* line 328, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .item-body-contacts__title::before, .item-body-contacts__title::after {
+      content: "";
+      width: 10px;
+      height: 1px;
+      background-color: #000000;
+      position: absolute;
+      top: 19px;
+      -webkit-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out; }
+    /* line 339, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .item-body-contacts__title::before {
+      -webkit-transform: rotate(-40deg);
+              transform: rotate(-40deg);
+      right: 0px; }
+    /* line 344, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .item-body-contacts__title::after {
+      -webkit-transform: rotate(40deg);
+              transform: rotate(40deg);
+      right: 8px; }
+  /* line 349, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .item-body-contacts__link {
+    font-weight: 500;
+    font-size: 16px; } }
+
+@media only screen and (max-width: 991.98px) {
+  /* line 362, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .all-categories__container {
+    padding: 0px 15px; }
+  /* line 365, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .all-categories__left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    width: 49%; }
+  /* line 370, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .all-categories__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 5px; }
+  /* line 377, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .all-categories__women-men {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 98%;
+            flex: 0 0 98%;
+    gap: 10px; }
+  /* line 383, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .title-text-all-categories {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+    /* line 386, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .title-text-all-categories__img img {
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    /* line 392, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .title-text-all-categories__text {
+      width: 30%;
+      height: 10%;
+      left: 35%;
+      top: 44%;
+      row-gap: 14px; }
+    /* line 400, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .title-text-all-categories__title {
+      font-size: 12px;
+      font-weight: 600; }
+    /* line 405, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .title-text-all-categories__mainCaption {
+      font-size: 20px;
+      font-weight: 600; }
+  /* line 411, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .women-all-categories {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+    /* line 414, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .women-all-categories__img img {
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    /* line 420, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .women-all-categories__text {
+      width: 30%;
+      height: 15%;
+      left: 30%;
+      top: 35%;
+      font-size: 18px; }
+  /* line 428, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .men-all-categories {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+    /* line 431, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .men-all-categories__img img {
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    /* line 437, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .men-all-categories__text {
+      width: 30%;
+      height: 15%;
+      left: 30%;
+      top: 35%;
+      font-size: 18px; }
+  /* line 445, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .accessories-all-categories {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+    /* line 448, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .accessories-all-categories__img img {
+      width: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    /* line 454, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .accessories-all-categories__text {
+      width: 28%;
+      height: 17%;
+      left: 40%;
+      top: 45%;
+      font-size: 18px; } }
+
+@media only screen and (max-width: 767.98px) {
+  /* line 466, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .title-text-all-categories__text {
+    width: 32%;
+    height: 12%;
+    row-gap: 6px; }
+  /* line 472, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .title-text-all-categories__title {
+    font-size: 12px;
+    font-weight: 600; }
+  /* line 477, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .title-text-all-categories__mainCaption {
+    font-size: 15px;
+    font-weight: 600; }
+  /* line 484, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .women-all-categories__text {
+    width: 34%;
+    height: 20%;
+    font-size: 14px; }
+  /* line 492, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .men-all-categories__text {
+    width: 34%;
+    height: 20%;
+    font-size: 14px; }
+  /* line 500, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .accessories-all-categories__text {
+    width: 28%;
+    height: 17%;
+    font-size: 14px; } }
+
+@media only screen and (max-width: 479.98px) {
+  /* line 510, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .title-text-all-categories__arrow_right {
+    width: 30px;
+    height: 30px;
+    top: 46%; }
+  /* line 516, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .title-text-all-categories__arrow_left {
+    width: 30px;
+    height: 30px;
+    top: 46%; }
+  /* line 522, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .title-text-all-categories__text {
+    width: 33%;
+    height: 13%;
+    row-gap: 4px; }
+  /* line 528, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .title-text-all-categories__title {
+    font-size: 10px;
+    font-weight: 500; }
+  /* line 533, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .title-text-all-categories__mainCaption {
+    font-size: 11px;
+    font-weight: 600; }
+  /* line 540, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .women-all-categories__text {
+    width: 38%;
+    height: 20%;
+    font-size: 12px; }
+  /* line 548, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .men-all-categories__text {
+    width: 32%;
+    height: 20%;
+    font-size: 12px; }
+  /* line 556, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .accessories-all-categories__text {
+    width: 30%;
+    height: 17%;
+    font-size: 12px; } }
+
+@media only screen and (max-width: 767.98px) {
+  /* line 568, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .menu__icon {
+    z-index: 11;
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer; }
+    /* line 575, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .menu__icon span, .menu__icon::before, .menu__icon::after {
+      left: 0;
+      position: absolute;
+      height: 10%;
+      width: 100%;
+      -webkit-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s;
+      background-color: #121212; }
+    /* line 585, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .menu__icon::before, .menu__icon::after {
+      content: ''; }
+    /* line 589, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .menu__icon::before {
+      top: 0; }
+    /* line 592, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .menu__icon::after {
+      bottom: 0; }
+    /* line 595, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .menu__icon span {
+      top: 50%;
+      -webkit-transform: scale(1) translate(0px, -50%);
+              transform: scale(1) translate(0px, -50%); }
+    /* line 599, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .menu__icon._active span {
+      -webkit-transform: scale(0) translate(0px, -50%);
+              transform: scale(0) translate(0px, -50%); }
+    /* line 602, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .menu__icon._active::before {
+      top: 50%;
+      -webkit-transform: rotate(-45deg) translate(0px, -50%);
+              transform: rotate(-45deg) translate(0px, -50%); }
+    /* line 606, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .menu__icon._active::after {
+      bottom: 50%;
+      -webkit-transform: rotate(45deg) translate(0px, 50%);
+              transform: rotate(45deg) translate(0px, 50%); }
+  /* line 611, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .menu__body {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF;
+    z-index: 6;
+    padding: 120px 15px 40px 15px;
+    -webkit-transition: left 0.3s ease 0s;
+    transition: left 0.3s ease 0s;
+    overflow: auto; }
+    /* line 622, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .menu__body._active::before {
+      content: '';
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      height: 100px;
+      background-color: #FFFFFF;
+      z-index: 3; }
+    /* line 632, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .menu__body._active {
+      left: 0; }
+  /* line 636, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .menu__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    row-gap: 50px; }
+  /* line 641, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .menu__link {
+    font-size: 30px; } }
+
+@media only screen and (max-width: 767.98px) {
+  /* line 651, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+  .navigation-body-block {
+    position: relative; }
+    /* line 653, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .navigation-body-block__burger {
+      display: block;
+      position: relative;
+      width: 25px;
+      height: 17px;
+      margin-right: 20px; }
+      /* line 659, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burger::before, .navigation-body-block__burger::after {
+        content: "";
+        background-color: #000000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0; }
+      /* line 669, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burger span {
+        position: absolute;
+        background-color: #000000;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 7.5px; }
+      /* line 678, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burger::before {
+        top: 0; }
+      /* line 682, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burger::after {
+        bottom: 0; }
+      /* line 686, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burger.active::before {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        top: 7.5px; }
+      /* line 691, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burger.active::after {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        bottom: 7.5px; }
+      /* line 696, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burger.active span {
+        -webkit-transform: scale(0);
+                transform: scale(0); }
+    /* line 701, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .navigation-body-block__menu_women {
+      display: none; }
+      /* line 703, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__menu_women.active {
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        width: 150px;
+        height: 250px;
+        background-color: #FFFFFF;
+        padding: 10px 5px 10px 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        opacity: 0.9;
+        border: 0.1px solid #c9c9c9;
+        margin: 0px;
+        z-index: 3; }
+    /* line 721, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .navigation-body-block__burgers {
+      display: block;
+      position: relative;
+      width: 25px;
+      height: 17px;
+      margin-right: 20px; }
+      /* line 728, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burgers::before, .navigation-body-block__burgers::after {
+        content: "";
+        background-color: #000000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0; }
+      /* line 738, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burgers span {
+        position: absolute;
+        background-color: #000000;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 7.5px; }
+      /* line 747, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burgers::before {
+        top: 0; }
+      /* line 751, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burgers::after {
+        bottom: 0; }
+      /* line 755, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burgers.actives::before {
+        -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+        top: 7.5px; }
+      /* line 760, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burgers.actives::after {
+        -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+        bottom: 7.5px; }
+      /* line 765, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__burgers.actives span {
+        -webkit-transform: scale(0);
+                transform: scale(0); }
+    /* line 770, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+    .navigation-body-block__menu_men {
+      display: none; }
+      /* line 773, ../../../../Desktop/AZGAR/Practic/2022/Misto_oficial/scss/common/_media.scss */
+      .navigation-body-block__menu_men.actives {
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        width: 150px;
+        height: 250px;
+        background-color: #FFFFFF;
+        padding: 10px 5px 10px 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        opacity: 0.9;
+        border: 0.1px solid #c9c9c9;
+        margin: 0px;
+        z-index: 3; } }

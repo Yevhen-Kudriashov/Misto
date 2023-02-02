@@ -1,0 +1,85 @@
+.registration {
+	background:linear-gradient(180deg, #F3F2F2 0%, #DCDBDB 100%);
+	&__container {
+	position: relative;
+	height: 580px;
+	@extend %flex-center-nowrap;
+	margin-bottom: 96px;
+	}
+}
+
+.body-registration {
+	&__img-women {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 6%;
+	left: 4%;
+	}
+
+	&__img-men {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 7%;
+	left: 72%;
+	}
+
+	&__forms {
+		background-color: $mainColor;
+	}
+	&__content{
+	position: relative;
+	flex-direction: column;
+	@extend %flex-center-nowrap;
+	padding: 80px 96px 96px 96px;
+	}
+
+	&__title {
+	opacity: 0.4;
+	letter-spacing: 0.06em;
+	padding-bottom: 16px;
+	}
+
+	&__subtitle {
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 138%;
+	padding-bottom: 54px;
+	letter-spacing: 0.06em;
+	color: $textColor;
+	width: 220px;
+	text-align: center;
+	}
+
+	&__row {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	row-gap: 24px;
+	width: 340px;
+	}
+
+	&__email {
+   padding: 23px 65px;
+	text-align: center;
+	background-color: $bodycolor;
+	border: 0px;
+	}
+
+	&__button{
+   padding: 23px 118px;
+	background-color: $textColor;
+	border: 2px solid $textColor;
+	margin: 0px auto;
+	color: $mainColor;
+	font-weight: 500;
+	opacity: 0.9;
+	letter-spacing: 0.06em;
+	cursor: pointer;
+	}
+}
+

@@ -1,0 +1,54 @@
+// main color
+$mainColor: #FFFFFF;
+$bodycolor:#F8F8F8;
+$textColor:#121212 ;
+$textColor_3: #1A1A1A;
+$buttonColor: #7d7d7d;
+
+
+// fontsize 
+$fontSize: 12px;
+
+// transition
+$transition: .5s ease-in-out;
+/*
+// scrollbar vars
+$btnColor: #331e1e;
+$trackColor: #c49191;
+$scrollWidth: 10px;
+*/
+
+// main fonts
+$mainFont:'League Spartan';
+
+
+// min width website size
+$minWidth: 320;
+
+// max width website size
+$maxWidth: 1920;
+
+// container maxwidth size 
+$contentContainer: 1120px;
+
+// container padding 
+// (30 = 15px left + 15px right side, if 0 = without indent)
+$paddingContainer: 30;
+
+
+// container full size 
+// contentContainer + paddingContainer
+$container: $contentContainer + $paddingContainer;
+
+// responsive type 
+// 1 - without breackpoints
+// 2 - with breackpoints 
+$responsiveType: 1;
+
+
+// breackpoints
+$pc: $container; 
+$table: 991.98px;
+$mobile: 767.98px;
+$oneMobile: 555px;
+$smallMobile: 479.98px;

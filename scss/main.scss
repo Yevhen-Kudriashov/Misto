@@ -1,0 +1,34 @@
+// add resset styles
+@import 'common/reset';
+
+// add font
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap');
+// add local fonts 
+// @import 'common/fonts'
+
+// vars
+@import 'common/var';
+
+// tempaltes
+@import 'common/templates';
+
+// mixins
+@import 'common/mixin';
+
+//general 
+@import 'common/general';
+
+//style classes for html
+@import 'common/classes';
+
+
+//structure ----------------------------------------------------------------------------------------
+
+//blocks
+@import 'blocks/blocks';
+
+@import 'common/media';
+
+
+
+

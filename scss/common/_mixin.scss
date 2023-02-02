@@ -1,0 +1,78 @@
+
+// connect mixin
+// @include mixinName;
+
+// mixin that generate from number to rem  
+@mixin rem($num) {
+
+}
+
+// text styles mixin
+// font size, line height, font weight, color 
+@mixin textStyles($fs, $lh, $fw, $color){
+    font-size: $fs;
+    line-height: $lh;
+    font-weight: $fw;
+    color: $color;
+}
+
+// button styles mixin
+// padding top bottom, padding left right, background-color, color, border-radius, borderSize, borderStyle, borderColor
+@mixin button($pt, $pr, $pb, $pl, $bgc, $color, $br, $borderSize, $borderStyle, $borderColor) {
+    padding: $pt $pr $pb $pl;
+    background-color: $bgc;
+    color: $color;
+    border-radius: $br;
+    border: $borderSize $borderStyle $borderColor;
+    outline: none;
+}
+
+
+
+// custom scrollbars mixin
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+    // For Google Chrome
+    &::-webkit-scrollbar {
+      width:  $size;
+      height: $size;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $foreground-color;
+    }
+  
+    &::-webkit-scrollbar-track {
+      background: $background-color;
+    }
+  
+    // For Internet Explorer
+    & {
+      scrollbar-face-color: $foreground-color;
+      scrollbar-track-color: $background-color;
+    }
+  }
+
+
+
+
+  // we can set from valur and to value? when user change devise screen, value be change
+  @mixin responsiveProperty($property, $fromValue, $toValue) {
+    $addSize: $fromValue - $toValue;
+    #{$property} : calc(#{$toValue + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+
+  }
+
+
+
+  @mixin responsiveFont($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $addMobSize: $addSize + $mobSize * 0.7;
+
+    @media (max-width: 767px) {
+      font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+    }
+
+    @media (min-width: 767px) {
+      font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+    }
+  }

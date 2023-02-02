@@ -1,0 +1,65 @@
+.feedback {
+background-color: $textColor;
+}
+
+.body-feedback {
+	&__content{
+	@extend %flex-between-center-nowrap;
+	padding: 12px 0px;
+	column-gap: 8px;
+	}
+	&__title {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.06em;
+	color: $mainColor;
+	}
+
+	&__row {
+	@extend %flex-center-nowrap;
+	gap: 12px;
+	}
+
+	&__email {
+   background-color: #494949;
+   width: 400px;
+   height: 32px;
+	border: 0px;
+	}
+	
+	&__email::placeholder{
+	color: $mainColor;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 18px;
+	opacity: 0.4;
+	padding: 7px 270px 7px 16px;
+	}
+
+	&__button {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 18px;
+	letter-spacing: 0.06em;
+	opacity: 0.9;
+	color: $mainColor;
+	background-color: $textColor;
+	border: 1px  solid $mainColor;
+	width: 108px;
+	height: 32px;
+	cursor: pointer;
+	&:hover{
+   background-color: $mainColor;
+   color: $textColor;
+	}
+	}
+}
+
+.social-body-feedback {
+	&__column {
+	display: flex;
+	align-items: center;
+   gap: 14px;
+	}
+}

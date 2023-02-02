@@ -1,0 +1,53 @@
+
+
+// for use @extend %templateName
+
+// flex 
+%flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+%flex-center-nowrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+%flex-text {
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+}
+
+%flex-between {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+%flex-between-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+%flex-between-center-nowrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+%flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

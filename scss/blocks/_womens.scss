@@ -1,0 +1,110 @@
+.womens {
+	&__container {
+		margin-bottom: 96px;
+	}
+}
+
+.body-block {
+	display: flex;
+	flex-direction: column;
+	row-gap: 48px;
+}
+
+.navigation-body-block {
+@extend %flex-between-center-nowrap;
+
+	&__menu_women {
+   @extend %flex-center-nowrap;
+   gap: 32px;
+	}
+	&__menu_men {
+	@extend %flex-center-nowrap;
+	gap: 32px;
+	}
+
+	&__burger{
+	display: none;
+	}
+
+	&__link {
+	font-weight: 400;
+	letter-spacing: 0.06em;
+	opacity: 0.6;
+	&:hover{
+	font-weight: 500;
+	opacity: 1;
+	}
+	}
+}
+
+.content-body-block {
+
+	&__column {
+		@extend %flex-all-center;
+		gap: 30px;
+	}
+
+	&__item {
+
+	&_active {
+	position: relative;
+	&::after{
+	content: '-50%';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 53px;
+	height: 31px;
+	background-color: #E91E63;
+	color: $mainColor;
+	@extend %flex-center-nowrap;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 13px;
+	}
+	}
+	}
+
+	&__row{
+	display: flex;
+	justify-content: space-between;
+	padding: 16px 0px 1px 0px;
+	}
+
+	&__title {
+	padding-bottom: 12px;
+	}
+	&__two-price{
+	display: flex;
+	column-gap: 5px;
+	}
+
+	&__price {
+	font-weight: 700;
+	}
+
+	&__stars {
+	align-self: flex-end;
+	}
+
+	&__new-price {
+	font-weight: 700;
+	opacity: 0.4;
+	}
+}
+
+.button-body-block {
+   background-color: $bodycolor;
+   width: 100%;
+   height: 48px;
+	@extend %flex-center-nowrap;
+	&__button {
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 15px;
+	opacity: 0.8;
+	letter-spacing: 0.06em;
+	color: $textColor;
+	text-transform: uppercase;
+	}
+}

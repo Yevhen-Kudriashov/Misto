@@ -1,0 +1,162 @@
+.all-categories {
+	&__container {
+	max-width: 1150px;
+	padding: 32px 15px 0px 15px;
+	margin-bottom: 96px;
+	}
+
+	&__body {
+	@extend %flex-all-center;
+	gap: 30px;
+	min-width: 0;
+	}
+
+	&__women-men{
+	display: flex;
+	gap: 30px;
+	}
+
+	&__left{
+	flex: 0 1 40%;
+	width: 540px;
+	}
+
+	&__right {
+	flex: 0 1 40%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	}
+}
+.swiper-button-prev {
+	display: block;
+	z-index: 5;
+	color: $textColor;
+	padding: 10px 0px 0px 40px;
+}
+.swiper-button-next{
+
+	display: block;
+		z-index: 5;
+			color: $textColor;
+				padding: 10px 60px 0px 0px;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after{
+	font-size: 20px;
+}
+
+
+.title-text-all-categories {
+	position: relative;
+	&__img {
+		position: relative;
+		& img{
+			width: 100%;
+		}
+	}
+
+&__text{
+	content: '';
+	position: absolute;
+	width: 289px;
+	height: 100px;
+	left: 125px;
+	top: 195px;
+	background: #FFFFFF;
+	border-radius: 4px;
+@extend %flex-center-nowrap;
+flex-direction: column;
+text-transform: uppercase;
+row-gap: 14px;
+z-index: 3;
+}
+	&__title {
+	opacity: 0.4;
+	letter-spacing: 0.06em;
+	}
+}
+
+
+.women-all-categories {
+	position: relative;
+	flex: 0 1 255px;
+	&__text {
+	content: '';
+	position: absolute;
+   width: 118px;
+	height: 48px;
+	left: 70px;
+	top: 76px;
+	background: #FFFFFF;
+	border-radius: 4px;
+	@extend %flex-center-nowrap;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 157%;
+	color: $textColor;
+	}
+}
+
+.men-all-categories {
+	position: relative;
+	flex: 0 1 255px;
+	&__text {
+	content: '';
+	position: absolute;
+	width: 86px;
+	height: 48px;
+	left: 85px;
+	top: 76px;
+	background: #FFFFFF;
+	border-radius: 4px;
+	@extend %flex-center-nowrap;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 157%;
+	color: $textColor;
+	}
+}
+
+.accessories-all-categories {
+	position: relative;
+	flex: 0 1 540px;
+	&__text {
+	content: '';
+	position: absolute;
+	width: 166px;
+	height: 48px;
+	left: 187px;
+	top: 106px;
+	background: #FFFFFF;
+	border-radius: 4px;
+	@extend %flex-center-nowrap;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 157%;
+	color: $textColor;
+	}
+}
+
+.info-all-categories {
+	&__column {
+	@extend %flex-all-center;
+	height: 103px;
+	gap: 30px;
+	padding: 42px 0px 0px 0px;
+	}
+	&__item {
+	display: flex;
+	column-gap: 10px;
+	}
+
+	&__list{
+	display: flex;
+	flex-direction: column;
+	width: 302px;
+	row-gap: 5px;
+	}
+}
